@@ -1,10 +1,12 @@
-# Welcome to the Enterprise Kubernetes on Azure Workshop
+# Welcome to the Enterprise Kubernetes
 
 Today we will be running through a hands on workshop where we will learn and play with some of features of Red Hat OpenShift.
  
 ## Useful Links
 
-- **Workshop Instructions**: https://rh-anz-aro-workshop.github.io/anzaroworkshop/
+- **Workshop Instructions**
+    - on Azure (ARO): https://rh-anz-aro-workshop.github.io/anzaroworkshop/
+    - on AWS (ROSA): 
 
 ## How to run the Terminal
 - Click the menu `Terminal > New Terminal`
