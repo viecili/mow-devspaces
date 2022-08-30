@@ -1,0 +1,7 @@
+---
+displayName: Managed OpenShift Workshop
+description: Welcome to the Enterprise Kubernetes Workshop
+tags: ["OpenShift", "ARO", "ROSA"]
+icon: /images/type-openshift.svg
+links:
+  v2: https://github.com/viecili/mow-devspaces
