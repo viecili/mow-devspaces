@@ -1,1 +1,3 @@
-# mow-devspaces
+# Managed OpenShift Workshop - Dev Spaces 
+
+
