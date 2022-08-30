@@ -1,0 +1,26 @@
+schemaVersion: 2.1.0
+metadata:
+  name: mow-devspaces
+components:
+  - name: jumpbox
+    container:
+      image: quay.io/devspaces/udi-rhel8:3.3 
+      memoryLimit: 4G
+      mountSources: true
+  - name: ubi-minimal
+    container:
+      image: registry.access.redhat.com/ubi8/ubi-minimal
+      command: ['tail']
+      args: ['-f', '/dev/null']
+      memoryLimit: 64M
+      mountSources: true
+commands:
+  - id: hello
+    exec:
+      label: "Hello"
+      component: tools
+      workingDir: ${PROJECTS_ROOT}/
+      commandLine: "env"
+      group:
+        kind: test
+        isDefault: true
