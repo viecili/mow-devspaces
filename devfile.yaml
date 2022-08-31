@@ -3,7 +3,6 @@ metadata:
   name: mow-devspaces
 components:
   - name: jumpbox
-    alias: jumpbox
     container:
       image: quay.io/devspaces/udi-rhel8:3.1
       memoryLimit: 4G
@@ -16,30 +15,24 @@ components:
       memoryLimit: 64M
       mountSources: true
 commands:
-  - id: hello
-    exec:
-      label: "Show env"
-      component: jumpbox
-      workingDir: ${PROJECTS_ROOT}/
-      commandLine: "env"
-      group:
-        kind: test
-        isDefault: true
   - id: get-ostoy-fe
     exec:
-      label: "Download ostoy-fe-deployment.yaml"
       component: jumpbox
       workingDir: ${PROJECTS_ROOT}/mow-devspaces/
       commandLine: "pwd && wget https://raw.githubusercontent.com/RH-ANZ-Workshops/anzworkshop/main/yaml/ostoy-fe-deployment.yaml && ls"
       group:
         kind: run
-        isDefault: true
   - id: get-ostoy-microservice
     exec:
-      label: "Download ostoy-microservice-deployment.yaml"
       component: jumpbox
       workingDir: ${PROJECTS_ROOT}/mow-devspaces/
       commandLine: "pwd && wget https://raw.githubusercontent.com/RH-ANZ-Workshops/anzworkshop/main/yaml/ostoy-microservice-deployment.yaml && ls"
       group:
         kind: run
-        isDefault: true
+  - id: get-ostoy-files
+    composite:
+      commands:
+        - get-ostoy-fe
+        - get-ostoy-microservice
+      parallel: true
+  
