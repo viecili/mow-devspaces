@@ -28,9 +28,7 @@ wget https://raw.githubusercontent.com/RH-ANZ-Workshops/anzworkshop/main/yaml/os
 
 **OR** 
 - Click the menu `Terminal > Run Task...`
-- From the drop down, select `get-ostoy-fe` to download the `ostoy-fe-deployment.yaml` file. 
-
-Repeat the first step above and select `get-ostoy-microservice` to download the `ostoy-microservice-deployment.yaml` file.
+- From the drop down, select `get-ostoy-files` to download the `ostoy-fe-deployment.yaml` and `ostoy-microservice-deployment.yaml` files.
 
 
 
