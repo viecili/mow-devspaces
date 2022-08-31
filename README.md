@@ -1,4 +1,4 @@
-# Welcome to the Enterprise Kubernetes
+# Welcome to the Enterprise Kubernetes Workshop
 
 Today we will be running through a hands on workshop where we will learn and play with some of features of Red Hat OpenShift.
  
@@ -7,6 +7,7 @@ Today we will be running through a hands on workshop where we will learn and pla
 - **Workshop Instructions**
     - on Azure (ARO): https://rh-anz-aro-workshop.github.io/anzaroworkshop/
     - on AWS (ROSA): 
+- Set up free GitHub Account if you dont have one already: https://github.com/join
 
 ## How to run the Terminal
 - Click the menu `Terminal > New Terminal`
@@ -16,13 +17,12 @@ Today we will be running through a hands on workshop where we will learn and pla
     - you should see your username, e.g. `user1`
 
 
-Exercise 2:
+## Resources for Exercise 2:
 
 wget https://raw.githubusercontent.com/RH-ANZ-Workshops/anzworkshop/main/yaml/ostoy-fe-deployment.yaml
 
 wget https://raw.githubusercontent.com/RH-ANZ-Workshops/anzworkshop/main/yaml/ostoy-microservice-deployment.yaml
 
-Feedback Survey link: https://red.ht/FeedbackARO
- 
-While you wait, you can set up free GitHub Account if you dont have one already
-https://github.com/join
+
+## Feedback Survey link: https://red.ht/FeedbackARO
+
