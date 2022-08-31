@@ -9,13 +9,17 @@ Today we will be running through a hands on workshop where we will learn and pla
     - on AWS (ROSA): 
 - Set up free GitHub Account if you dont have one already: https://github.com/join
 
-## How to run the Terminal
+## How to open the Terminal
 - Click the menu `Terminal > New Terminal`
 - In the drop down list, select `jumpbox`
     - a terminal pane should open at the bottom of the screen
 - Click on the terminal pane and type `oc whoami` then press `ENTER`
     - you should see your username, e.g. `user1`
 
+## How to open the OpenShift Console
+- Open the Terminal (see above)
+- Run `oc whoami --show-console`
+    - you should see the OpenShift Console URL, hold `CMD` _(macOS)_ or `CTRL` and click the link.
 
 ## Resources for Exercise 2
 
