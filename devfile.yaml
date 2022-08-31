@@ -4,7 +4,7 @@ metadata:
 components:
   - name: jumpbox
     container:
-      image: quay.io/devspaces/udi-rhel8:3.3 
+      image: quay.io/devspaces/udi-rhel8:3.1
       memoryLimit: 4G
       mountSources: true
   - name: ubi-minimal
@@ -18,9 +18,27 @@ commands:
   - id: hello
     exec:
       label: "Hello"
-      component: tools
+      component: jumpbox
       workingDir: ${PROJECTS_ROOT}/
       commandLine: "env"
       group:
         kind: test
+        isDefault: true
+  - id: get-ostoy-fe
+    exec:
+      label: "Download ostoy-fe-deployment.yaml"
+      component: jumpbox
+      workingDir: ${PROJECTS_ROOT}/
+      commandLine: "wget https://raw.githubusercontent.com/RH-ANZ-Workshops/anzworkshop/main/yaml/ostoy-fe-deployment.yaml"
+      group:
+        kind: run
+        isDefault: true
+  - id: get-ostoy-microservice
+    exec:
+      label: "Download ostoy-microservice-deployment.yaml"
+      component: jumpbox
+      workingDir: ${PROJECTS_ROOT}/
+      commandLine: "wget https://raw.githubusercontent.com/RH-ANZ-Workshops/anzworkshop/main/yaml/ostoy-microservice-deployment.yaml"
+      group:
+        kind: run
         isDefault: true
