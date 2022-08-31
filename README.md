@@ -17,11 +17,21 @@ Today we will be running through a hands on workshop where we will learn and pla
     - you should see your username, e.g. `user1`
 
 
-## Resources for Exercise 2:
+## Resources for Exercise 2
 
+Open the Terminal (see above), and run: 
+
+```zsh
 wget https://raw.githubusercontent.com/RH-ANZ-Workshops/anzworkshop/main/yaml/ostoy-fe-deployment.yaml
-
 wget https://raw.githubusercontent.com/RH-ANZ-Workshops/anzworkshop/main/yaml/ostoy-microservice-deployment.yaml
+```
+
+**OR** 
+- Click the menu `Terminal > Run Task...`
+- From the drop down, select `get-ostoy-fe` to download the `ostoy-fe-deployment.yaml` file. 
+
+Repeat the first step above and select `get-ostoy-microservice` to download the `ostoy-microservice-deployment.yaml` file.
+
 
 
 ## Feedback Survey link: https://red.ht/FeedbackARO
